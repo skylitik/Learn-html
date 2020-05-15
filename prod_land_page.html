@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        #header-img {
+width: 210px;
+height: 170px;
+}
+#header{
+  position:fixed;
+  width: 100%;
+  display:flex;
+  align-items: center;
+}
+#nav-bar {
+  width: 100%;
+  }
+ul {
+  font-family: 'Lato', sans-serif;
+  list-style:none;
+  display:flex;
+  justify-content: space-around;
+  font-weight: 700;
+  
+}
+
+#sign-up {  
+  display: flex;
+  flex-direction:column;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+}
+#form {
+  width: 200px;
+}
+#email {
+width: 100%;
+padding: 5px;
+}
+#submit{
+  padding: 5px;
+  margin: 15px 0;
+  border:0;
+  width:100%;
+  max-width: 150px;
+  
+}
+.button {
+  height: 40px;
+  background-color: #2da14c;
+  font-family: sans-serif;
+  font-size: 1em;
+  border-radius: 5px;
+  padding: 0, 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white,transparent;
+  margin-bottom: 20px;
+}
+#About {
+  margin-top:50px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.Products {
+ height: 600px;
+ width: 100%;
+  background-image: url("https://img5.goodfon.com/original/1366x768/4/b2/tekstura-fon-eda-desert-seamless-sweet-pastries.jpg");
+}
+#Pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.product {
+    background-color:#e0ccff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+.level {
+    background-color: #666699;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+@media only screen and (max-width: 600px) {
+ body {
+    background-color: lightblue;
+  }
+}
+  h2 {
+    margin-top: 15px;
+        }
+#footer {
+  text-align: right;
+  font-style: italic;
+}
+  
+    </style>
+</head>
+
+<body>
+<header id="header">
+  <div class="logo">
+  <img id="header-img" src="https://i.ibb.co/MRhYcSw/Sernix.png" alt="Sernix" border="0">
+</div>
+<nav id="nav-bar">
+  <ul>
+    <li>
+      <a class="nav-link" href="#Products">Products</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#About">About us</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Pricing">Pricing</a>
+    </li>
+  </ul>
+</nav>
+</header>
+<div id="sign-up">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <h2>Handcrafted, home-made pastry</h2>
+    <input id="email" name="email" type="email" placeholder="Enter your email" required="">
+    <input id="submit" class="button" type="submit" value="confirm">
+</form>
+</div>
+<div class="Products" id="Products">
+  </div>
+<section id="About">
+  <iframe id="video" src="https://www.youtube.com/embed/tqajRX0R_JU" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</section>
+<section id="Pricing">
+<div class="product" id="cake">
+<div class="level">Cake</div>
+<h2>$200</h2>
+<ol>
+<li>Lorem ipsum.</li>
+<li>Lorem ipsum.</li>
+<li>Lorem ipsum dolor.</li>
+<li>Lorem ipsum.</li>
+</ol>
+<button class="button">Select</button>
+</div>
+<div class="product" id="Cheesecake">
+<div class="level">Cheesecake</div>
+<h2>$300</h2>
+<ol>
+<li>Lorem ipsum.</li>
+<li>Lorem ipsum.</li>
+<li>Lorem ipsum dolor.</li>
+<li>Lorem ipsum.</li>
+</ol>
+<button class="button">Select</button>
+</div>
+<div class="product" id="Tart">
+<div class="level">Tart</div>
+<h2>$150</h2>
+<ol>
+<li>blba</li>
+<li>lbalb</li>
+<li>Lorem ipsum dolor.</li>
+<li>Lorem ipsum.</li>
+</ol>
+<button class="button">Select</button>
+</div>
+</section>
+<footer id="footer"><p>Made by Seglit</p></footer>
+
+  
+    
+</body>
+</html>
