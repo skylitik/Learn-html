@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    
+    <style>
+        .main-body{
+  display: grid;
+  grid-template-columns: minmax(250px, auto) 1fr;
+  grid-template-areas: "navbar mainContent";
+  grid-gap: 20px;
+  }
+#tittle{
+  color: white
+}
+#navbar{
+  grid-area: navbar;
+  position: fixed;
+}
+nav#navbar a{
+  display: block;
+  border: 1px solid black;
+  padding: 8px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+}
+main#main-doc{
+  grid-area: mainContent;
+}
+body{
+  background-color: #0b0b28;
+   }
+header{
+  text-align: left;
+  font-size: 1.8em;
+  padding-left: 25px;
+  font-weight: bold;
+}
+#main-doc{
+  font-family: Helvetica;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+}
+li {
+  padding: 5px;
+}
+code{
+  background-color: #666600;
+  cursor: pointer;
+
+}
+@media screen and (max-width: 750px) {
+  div.main-body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "navbar" "mainContent";
+  }
+  nav#navbar {
+    position: inherit;
+  }
+}
+    </style>
+</head>
+
+<body>
+   
+<div class="main-body">
+<nav id="navbar">
+  <header id="tittle">JS Documentation</header>
+  <a href="#Introduction" class="nav-link">Introduction</a>
+  <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
+  <a href="#Variables" class="nav-link">Variables</a>
+  <a href="#Scope" class="nav-link">Scope</a>
+  <a href="#Functions" class="nav-link">Functions</a>
+  </nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.).  There are also more advanced server side versions of JavaScript such as Node.js, which allow you to add more functionality to a website than simply downloading files (such as realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+    <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+   <ul>
+    <li>
+      Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
+    </li>
+     <li>
+       Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
+     </li>
+    </ul> 
+  </section>
+  <section class="main-section" id="JavaScript_and_Java">
+    <header>JavaScript and Java</header>
+    <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+    <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+    <p>A JavaScript identifier must start with a letter, underscore (<code>_</code>), or dollar sign (<code>$</code>).Subsequent characters can also be digits (<code>0</code>-<code>9</code>).</p>
+    <p>Because JavaScript is case sensitive, letters include the characters "<code>A</code>" through "<code>Z</code>" (uppercase) as well as "<code>a</code>" through "<code>z</code>" (lowercase).</p>
+    <p>You can declare a variable in two ways:</p>
+    <ul>
+      <li>With the keyword <code>var</code>. For example, <code>var x = 42</code>. This syntax can be used to declare both <strong>local</strong> and <strong>global</strong> variables, depending on the <i>execution context</i>.</li> 
+      <li>With the keyword const or let. For example, <code>let y = 13</code>. This syntax can be used to declare a block-scope local variable. (See <a href="#Scope">Scope</a> below.)</li>
+    </ul>
+  </section>
+  <section class="main-section" id="Scope">
+    <header>Scope</header>
+    <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+    <p>JavaScript before ECMAScript 2015 does not have block statement scope. Rather, a variable declared within a block is local to the function (or global scope) that the block resides within.</p>
+  </section>
+  <section class="main-section" id="Functions">
+    <header>Functions</header>
+    <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+    <ul>
+      <li>The name of the function.</li>
+      <li>A list of parameters to the function, enclosed in parentheses and separated by commas.</li>
+      <li>The JavaScript statements that define the function, enclosed in curly brackets, <code>{...}</code>.</li>
+    </ul>
+    <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
+  </section>
+</main>
+</div>
+
+
+
+    
+</body>
+</html>
